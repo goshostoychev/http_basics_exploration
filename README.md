@@ -15,13 +15,14 @@ The status code is 200 OK and indicates that the request has succeeded.
 
 2.	POST - The POST method is used to create new resources. Unlike GET requests, POST requests typically include a request body, which is where the client specifies the attributes of the resource to be created. A POST request to the /posts endpoint of JSONPlaceholder might have a request body that looks like this:
    
- {
-        "userId": 1,
-        "id": 101,
-        "title": "Testing POST method",
-        "body": "Testing the POST method to JSONPlaceholder with Postman."
- }
-
+```
+   {
+       "userId": 1,
+       "id": 101,
+       "title": "Testing POST method",
+       "body": "Testing the POST method to JSONPlaceholder with Postman."
+   }
+```
 
 Here’s how the POST request looks like in Postman:
 
