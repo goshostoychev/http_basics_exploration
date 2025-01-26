@@ -14,13 +14,13 @@ The following HTTP methods were used during the tests:
 The status code is 200 OK and indicates that the request has succeeded.
 
 2.	POST - The POST method is used to create new resources. Unlike GET requests, POST requests typically include a request body, which is where the client specifies the attributes of the resource to be created. A POST request to the /posts endpoint of JSONPlaceholder might have a request body that looks like this:
-3.	    {
-4.	        "userId": 1,
-5.	        "id": 101,
-6.	        "title": "Testing POST method",
-7.	        "body": "Testing the POST method to JSONPlaceholder with Postman."
-8.	    }
-
+   
+ {
+        "userId": 1,
+        "id": 101,
+        "title": "Testing POST method",
+        "body": "Testing the POST method to JSONPlaceholder with Postman."
+ }
 
 
 Here’s how the POST request looks like in Postman:
@@ -31,6 +31,7 @@ Here’s how the POST request looks like in Postman:
 The status code is 201 Created, and indicates that the request has succeeded and has led to the creation of a resource. 
 
 PUT - The PUT method is used to replace an existing resource with an updated version. This method works by replacing the entire resource (i.e., the specific product located at the /posts/1 endpoint) with the data that is included in the request’s body. This means that any fields or properties not included in the request body are deleted, and any new fields or properties are added. A PUT request to the /posts/1 endpoint of JSONPlaceholder might have a request body that looks like this:
+
     {
         "userId": 123,
         "newtitle": "Testing PUT method with additional field",
